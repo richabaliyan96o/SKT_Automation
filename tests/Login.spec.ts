@@ -1,10 +1,8 @@
-import { test, expect } from '@playwright/test';
-import { LoginPageActions } from '../Keywords/LoginPageKeywords';
+import { test } from '../Hooks/Loginfixture';
 
-test('Login with valid credentials', async ({ page }) => {
-    test.setTimeout(60000);
-    const login = new LoginPageActions(page);
-    await login.navigateToLoginPage();
-    await login.login('streamvendor3b', 'MediaKind1');
 
+test('Login with valid credentials', async ({login, page }) => {
+
+    
+    
 });
